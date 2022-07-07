@@ -1,0 +1,11 @@
+digraph "Battleship.Game.GetUsersId"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Battleship.Game.GetUsersId",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Retorna una lista con las id de ambos usuarios"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Battleship.User.GetID",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBattleship_1_1User.html#aa3203ed63710f3cd6bd0d44a5e30fccc",tooltip="Retorna la id del usuario"];
+}

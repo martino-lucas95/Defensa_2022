@@ -1,0 +1,5 @@
+Game id = 58
+User 1 id= 5095993004 - Ships alive = 1
+User 2 id= 5145023301 - Ships alive = 0
+Winner = 5095993004
+

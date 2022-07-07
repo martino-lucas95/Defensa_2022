@@ -1,0 +1,11 @@
+digraph "Battleship.SpecialHabilities.UseSeer"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="Battleship.SpecialHabilities.\lUseSeer",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Utiliza la habilidad especial Seer. Seer puede averiguar cual zona (superior o inferior) el usuario c..."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Battleship.SeerHandler.Internal\lHandle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBattleship_1_1SeerHandler.html#a83bbb4b93be0c5e0a53df48735d3d558",tooltip="Procesa los mensajes \"vidente\" y retorna true; retorna false en caso contrario."];
+}

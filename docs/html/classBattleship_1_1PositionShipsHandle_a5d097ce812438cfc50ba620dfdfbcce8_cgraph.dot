@@ -1,0 +1,26 @@
+digraph "Battleship.PositionShipsHandle.InternalHandle"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Battleship.PositionShips\lHandle.InternalHandle",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Procesa el mensaje \"posicionar barcos\" y retorna true; retorna false en caso contrario."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Battleship.User.ChangeStatus",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBattleship_1_1User.html#a185ea5f530e0b287b828a2f159c7f013",tooltip="Cambia el estado del usuario User Status: start | lobby | position ships | in {GameMode} game start: ..."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Battleship.Board.Control\lCoordinates",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBattleship_1_1Board.html#a4f7a9c1d382355dd99749d8cd560ada4",tooltip="Controla si los datos de coordenada y orientación ingresados son correctos, de ser asi los envia a Po..."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Battleship.User.GetID",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBattleship_1_1User.html#aa3203ed63710f3cd6bd0d44a5e30fccc",tooltip="Retorna la id del usuario"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Battleship.Game.GetOther\lUserById",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBattleship_1_1Game.html#a92b6772fa2361576b87a1a348663a067",tooltip="Se ingresa la id de un usuario, y se retorna el otro usuario Sirve para cuando conocemos un usuario y..."];
+  Node5 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Battleship.User.GetPlayer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBattleship_1_1User.html#ad3a06493a52e9c0304c9e643d7218d09",tooltip="Retorna el Player del usuario"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Battleship.Board.GetShips\lAlive",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBattleship_1_1Board.html#a8a1bd7fb294c3ed104243a8e7350b8c6",tooltip="Retorna el número de barcos que hay en el tablero"];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="Battleship.Player.GetShips\lBoard",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBattleship_1_1Player.html#a3a1d195e342eb45ee6dce8ad82acca88",tooltip="Retorna el tablero con los barcos"];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="Battleship.User.getStatus",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBattleship_1_1User.html#ae8ab56094bbf8ce70723d437842a6b9f",tooltip="Retorna el estado del usuario"];
+}

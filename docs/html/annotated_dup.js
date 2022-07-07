@@ -1,0 +1,56 @@
+var annotated_dup =
+[
+    [ "Battleship", "namespaceBattleship.html", [
+      [ "User", "classBattleship_1_1User.html", "classBattleship_1_1User" ],
+      [ "Game", "classBattleship_1_1Game.html", "classBattleship_1_1Game" ],
+      [ "Board", "classBattleship_1_1Board.html", "classBattleship_1_1Board" ],
+      [ "Player", "classBattleship_1_1Player.html", "classBattleship_1_1Player" ],
+      [ "Ship", "classBattleship_1_1Ship.html", "classBattleship_1_1Ship" ],
+      [ "SpecialHabilities", "classBattleship_1_1SpecialHabilities.html", "classBattleship_1_1SpecialHabilities" ],
+      [ "CreateUserHandle", "classBattleship_1_1CreateUserHandle.html", "classBattleship_1_1CreateUserHandle" ],
+      [ "SeeGameSummariesHandler", "classBattleship_1_1SeeGameSummariesHandler.html", "classBattleship_1_1SeeGameSummariesHandler" ],
+      [ "ExitLobbyHandle", "classBattleship_1_1ExitLobbyHandle.html", "classBattleship_1_1ExitLobbyHandle" ],
+      [ "PositionShipsHandle", "classBattleship_1_1PositionShipsHandle.html", "classBattleship_1_1PositionShipsHandle" ],
+      [ "SearchGameHandler", "classBattleship_1_1SearchGameHandler.html", "classBattleship_1_1SearchGameHandler" ],
+      [ "SearchPredictiveGameHandler", "classBattleship_1_1SearchPredictiveGameHandler.html", "classBattleship_1_1SearchPredictiveGameHandler" ],
+      [ "AttackHandle", "classBattleship_1_1AttackHandle.html", "classBattleship_1_1AttackHandle" ],
+      [ "AttackPredictiveHandler", "classBattleship_1_1AttackPredictiveHandler.html", "classBattleship_1_1AttackPredictiveHandler" ],
+      [ "SeeBoardsHandle", "classBattleship_1_1SeeBoardsHandle.html", "classBattleship_1_1SeeBoardsHandle" ],
+      [ "SeerHandler", "classBattleship_1_1SeerHandler.html", "classBattleship_1_1SeerHandler" ],
+      [ "SpecialHabilitiesHandler", "classBattleship_1_1SpecialHabilitiesHandler.html", "classBattleship_1_1SpecialHabilitiesHandler" ],
+      [ "BaseHandler", "classBattleship_1_1BaseHandler.html", "classBattleship_1_1BaseHandler" ],
+      [ "CommandsHandle", "classBattleship_1_1CommandsHandle.html", "classBattleship_1_1CommandsHandle" ],
+      [ "FinalHandle", "classBattleship_1_1FinalHandle.html", "classBattleship_1_1FinalHandle" ],
+      [ "IHandler", "interfaceBattleship_1_1IHandler.html", "interfaceBattleship_1_1IHandler" ],
+      [ "ConsoleInputText", "classBattleship_1_1ConsoleInputText.html", "classBattleship_1_1ConsoleInputText" ],
+      [ "ConsolePrinter", "classBattleship_1_1ConsolePrinter.html", "classBattleship_1_1ConsolePrinter" ],
+      [ "IInputText", "interfaceBattleship_1_1IInputText.html", "interfaceBattleship_1_1IInputText" ],
+      [ "IPrinter", "interfaceBattleship_1_1IPrinter.html", "interfaceBattleship_1_1IPrinter" ],
+      [ "TelegramPrint", "classBattleship_1_1TelegramPrint.html", "classBattleship_1_1TelegramPrint" ],
+      [ "Program", "classBattleship_1_1Program.html", null ]
+    ] ],
+    [ "Library", "namespaceLibrary.html", [
+      [ "Tests", "namespaceLibrary_1_1Tests.html", [
+        [ "UserRegisterTests", "classLibrary_1_1Tests_1_1UserRegisterTests.html", "classLibrary_1_1Tests_1_1UserRegisterTests" ],
+        [ "UserTests", "classLibrary_1_1Tests_1_1UserTests.html", "classLibrary_1_1Tests_1_1UserTests" ],
+        [ "GameRegisterTests", "classLibrary_1_1Tests_1_1GameRegisterTests.html", "classLibrary_1_1Tests_1_1GameRegisterTests" ],
+        [ "GameTests", "classLibrary_1_1Tests_1_1GameTests.html", "classLibrary_1_1Tests_1_1GameTests" ],
+        [ "LobbyTests", "classLibrary_1_1Tests_1_1LobbyTests.html", "classLibrary_1_1Tests_1_1LobbyTests" ],
+        [ "ClassesInGameTest", "classLibrary_1_1Tests_1_1ClassesInGameTest.html", "classLibrary_1_1Tests_1_1ClassesInGameTest" ],
+        [ "CommandsHandleTests", "classLibrary_1_1Tests_1_1CommandsHandleTests.html", "classLibrary_1_1Tests_1_1CommandsHandleTests" ],
+        [ "CreateUserHandleTest", "classLibrary_1_1Tests_1_1CreateUserHandleTest.html", "classLibrary_1_1Tests_1_1CreateUserHandleTest" ],
+        [ "FinalHandleTest", "classLibrary_1_1Tests_1_1FinalHandleTest.html", "classLibrary_1_1Tests_1_1FinalHandleTest" ],
+        [ "SeeGameSummariesHandlerTests", "classLibrary_1_1Tests_1_1SeeGameSummariesHandlerTests.html", "classLibrary_1_1Tests_1_1SeeGameSummariesHandlerTests" ],
+        [ "ExitLobbyHandleTests", "classLibrary_1_1Tests_1_1ExitLobbyHandleTests.html", "classLibrary_1_1Tests_1_1ExitLobbyHandleTests" ],
+        [ "SearchGameHandlerTests", "classLibrary_1_1Tests_1_1SearchGameHandlerTests.html", "classLibrary_1_1Tests_1_1SearchGameHandlerTests" ],
+        [ "SearchPredictiveGameHandlerTests", "classLibrary_1_1Tests_1_1SearchPredictiveGameHandlerTests.html", "classLibrary_1_1Tests_1_1SearchPredictiveGameHandlerTests" ],
+        [ "PositionShipsHandleTest", "classLibrary_1_1Tests_1_1PositionShipsHandleTest.html", "classLibrary_1_1Tests_1_1PositionShipsHandleTest" ],
+        [ "SeeBoardsHandleTest", "classLibrary_1_1Tests_1_1SeeBoardsHandleTest.html", "classLibrary_1_1Tests_1_1SeeBoardsHandleTest" ],
+        [ "AttackHandleTest", "classLibrary_1_1Tests_1_1AttackHandleTest.html", "classLibrary_1_1Tests_1_1AttackHandleTest" ],
+        [ "AttackPredictiveHandlerTest", "classLibrary_1_1Tests_1_1AttackPredictiveHandlerTest.html", "classLibrary_1_1Tests_1_1AttackPredictiveHandlerTest" ],
+        [ "SeerHandleTest", "classLibrary_1_1Tests_1_1SeerHandleTest.html", "classLibrary_1_1Tests_1_1SeerHandleTest" ],
+        [ "SpecialHabilitiesHandleTest", "classLibrary_1_1Tests_1_1SpecialHabilitiesHandleTest.html", "classLibrary_1_1Tests_1_1SpecialHabilitiesHandleTest" ]
+      ] ]
+    ] ],
+    [ "Exception", "classException.html", null ]
+];

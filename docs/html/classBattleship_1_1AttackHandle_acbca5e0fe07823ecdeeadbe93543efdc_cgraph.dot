@@ -1,0 +1,30 @@
+digraph "Battleship.AttackHandle.InternalHandle"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Battleship.AttackHandle.\lInternalHandle",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Procesa el mensaje \"atacar\" y retorna true; retorna false en caso contrario."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Battleship.Game.AddUserWinner",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBattleship_1_1Game.html#aee1d9ba4a2b52b14a9c65ed46897451e",tooltip="Se declará cuales el usuario ganador"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Battleship.User.ChangeStatus",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBattleship_1_1User.html#a185ea5f530e0b287b828a2f159c7f013",tooltip="Cambia el estado del usuario User Status: start | lobby | position ships | in {GameMode} game start: ..."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Battleship.Player.ChangeTurn",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBattleship_1_1Player.html#ad32ddc2509b6e87047cba48bbf679b2d",tooltip="Cambia el turno del jugador"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Battleship.User.GetID",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBattleship_1_1User.html#aa3203ed63710f3cd6bd0d44a5e30fccc",tooltip="Retorna la id del usuario"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Battleship.Game.GetOther\lUserById",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBattleship_1_1Game.html#a92b6772fa2361576b87a1a348663a067",tooltip="Se ingresa la id de un usuario, y se retorna el otro usuario Sirve para cuando conocemos un usuario y..."];
+  Node6 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Battleship.User.GetPlayer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBattleship_1_1User.html#ad3a06493a52e9c0304c9e643d7218d09",tooltip="Retorna el Player del usuario"];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="Battleship.Player.GetShips\lAlive",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBattleship_1_1Player.html#a05dbdc256ed11f1674e846f6184fd7f3",tooltip="El método accede al tablero con las naves a trávez del método GetShipsAlive, y retorna la información..."];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="Battleship.Board.GetShips\lAlive",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBattleship_1_1Board.html#a8a1bd7fb294c3ed104243a8e7350b8c6",tooltip="Retorna el número de barcos que hay en el tablero"];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="Battleship.User.getStatus",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBattleship_1_1User.html#ae8ab56094bbf8ce70723d437842a6b9f",tooltip="Retorna el estado del usuario"];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="Battleship.Player.GetTurn",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBattleship_1_1Player.html#a2b1fbd7babb3d5e3599e79241c80bb5e",tooltip="Retorna un bool representado si es o no el turno del Player"];
+}

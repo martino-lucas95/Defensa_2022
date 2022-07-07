@@ -1,0 +1,11 @@
+digraph "Battleship.Ship.DecreaseHealth"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="Battleship.Ship.Decrease\lHealth",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Se decrementa en 1 el número de casillas que el barco posee sin disparar (vida)"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Battleship.Board.RemoveShip",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBattleship_1_1Board.html#a3dcee909494a903a8ecd6bd2ec039ed6",tooltip="Se ingresa un barco y se elimina al mismo de la lista que contiene a los barcos"];
+}

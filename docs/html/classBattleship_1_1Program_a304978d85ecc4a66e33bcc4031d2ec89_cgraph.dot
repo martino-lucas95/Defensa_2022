@@ -1,0 +1,11 @@
+digraph "Battleship.Program.HandleUpdateAsync"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Battleship.Program.Handle\lUpdateAsync",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Maneja las actualizaciones del bot (todo lo que llega), incluyendo mensajes, ediciones de mensajes,..."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Battleship.Program.Handle\lErrorAsync",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBattleship_1_1Program.html#a103557c84e4cb47b9cb4db7da00f3950",tooltip="Manejo de excepciones. Por ahora simplemente la imprimimos en la consola."];
+}

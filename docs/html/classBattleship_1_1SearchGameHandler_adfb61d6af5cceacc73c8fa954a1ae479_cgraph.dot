@@ -1,0 +1,23 @@
+digraph "Battleship.SearchGameHandler.InternalHandle"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Battleship.SearchGameHandler.\lInternalHandle",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Procesa el mensaje \"Buscar partida\" y retorna true; retorna false en caso contrario."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Battleship.User.ChangeGameMode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBattleship_1_1User.html#a9caaec2caae1bbbd3e53e8535f71c7b6",tooltip="Cambiar el modo de juego"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Battleship.User.ChangeStatus",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBattleship_1_1User.html#a185ea5f530e0b287b828a2f159c7f013",tooltip="Cambia el estado del usuario User Status: start | lobby | position ships | in {GameMode} game start: ..."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Battleship.Player.ChangeTurn",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBattleship_1_1Player.html#ad32ddc2509b6e87047cba48bbf679b2d",tooltip="Cambia el turno del jugador"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Battleship.User.GetID",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBattleship_1_1User.html#aa3203ed63710f3cd6bd0d44a5e30fccc",tooltip="Retorna la id del usuario"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Battleship.User.GetPlayer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBattleship_1_1User.html#ad3a06493a52e9c0304c9e643d7218d09",tooltip="Retorna el Player del usuario"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Battleship.User.getStatus",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBattleship_1_1User.html#ae8ab56094bbf8ce70723d437842a6b9f",tooltip="Retorna el estado del usuario"];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="Battleship.User.RestartPlayer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBattleship_1_1User.html#a3dd611dcc4f3e43c75a8d9954e7ad505",tooltip="Reinicia el Player para un nuevo juego."];
+}

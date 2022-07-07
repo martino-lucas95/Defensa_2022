@@ -1,0 +1,36 @@
+digraph "Battleship.BaseHandler"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Battleship.BaseHandler\n|+ Next\l+ Keywords\l|+ BaseHandler()\l+ BaseHandler()\l+ Handle()\l+ Cancel()\l# InternalHandle()\l# InternalCancel()\l# CanHandle()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Clase base para implementar el patrón Chain of Responsibility. En ese patrón se pasa un mensaje a tra..."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node2 [label="{IHandler\n|+ Next\l|+ Handle()\l+ Cancel()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interfaceBattleship_1_1IHandler.html",tooltip="Interfaz para implementar el patrón Chain of Responsibility. En ese patrón se pasa un mensaje a travé..."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node3 [label="{Battleship.AttackHandle\n|# gameMode\l# Printer\l|+ AttackHandle()\l# InternalHandle()\l# Attack()\l# CanHandle()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBattleship_1_1AttackHandle.html",tooltip="Un \"handler\" del patrón Chain of Responsibility que implementa el comando \"atacar\"...."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node4 [label="{Battleship.AttackPredictive\lHandler\n||+ AttackPredictiveHandler()\l# Attack()\l# CanHandle()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBattleship_1_1AttackPredictiveHandler.html",tooltip="Un \"handler\" del patrón Chain of Responsibility que implementa el comando \"atacar p\"...."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node5 [label="{Battleship.CommandsHandle\n||+ CommandsHandle()\l# InternalHandle()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBattleship_1_1CommandsHandle.html",tooltip="Un \"handler\" del patrón Chain of Responsibility que implementa el comando \"comandos\"...."];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node6 [label="{Battleship.CreateUserHandle\n||+ CreateUserHandle()\l# InternalHandle()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBattleship_1_1CreateUserHandle.html",tooltip="Un \"handler\" del patrón Chain of Responsibility que implementa el comando \"crear usuario\"...."];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node7 [label="{Battleship.ExitLobbyHandle\n||+ ExitLobbyHandle()\l# InternalHandle()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBattleship_1_1ExitLobbyHandle.html",tooltip="Un \"handler\" del patrón Chain of Responsibility que implementa el comando \"buscar partida\"...."];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node8 [label="{Battleship.FinalHandle\n||+ FinalHandle()\l# InternalHandle()\l# CanHandle()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBattleship_1_1FinalHandle.html",tooltip="Un \"handler\" del patrón Chain of Responsibility que se encarga de aceptar cualquier mensaje,..."];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node9 [label="{Battleship.PositionShips\lHandle\n|# Printer\l|+ PositionShipsHandle()\l# InternalHandle()\l# CanHandle()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBattleship_1_1PositionShipsHandle.html",tooltip="Un \"handler\" del patrón Chain of Responsibility que implementa el comando \"posicionar barco\"...."];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node10 [label="{Battleship.SearchGameHandler\n|# gameMode\l# Printer\l|+ SearchGameHandler()\l# InternalHandle()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBattleship_1_1SearchGameHandler.html",tooltip="Un \"handler\" del patrón Chain of Responsibility que implementa el comando \"buscar partida\"...."];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node11 [label="{Battleship.SearchPredictive\lGameHandler\n||+ SearchPredictiveGameHandler()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBattleship_1_1SearchPredictiveGameHandler.html",tooltip="Un \"handler\" del patrón Chain of Responsibility que implementa el comando \"buscar partida predictiva\"..."];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node12 [label="{Battleship.SeeBoardsHandle\n||+ SeeBoardsHandle()\l# InternalHandle()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBattleship_1_1SeeBoardsHandle.html",tooltip="Un \"handler\" del patrón Chain of Responsibility que implementa el comando \"ver tableros\"...."];
+  Node1 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node13 [label="{Battleship.SeeGameSummaries\lHandler\n||+ SeeGameSummariesHandler()\l# InternalHandle()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBattleship_1_1SeeGameSummariesHandler.html",tooltip="Un \"handler\" del patrón Chain of Responsibility que implementa el comando \"ver partida jugada\"...."];
+  Node1 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node14 [label="{Battleship.SeerHandler\n|# Printer\l|+ SeerHandler()\l# InternalHandle()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBattleship_1_1SeerHandler.html",tooltip="Un \"handler\" del patrón Chain of Responsibility que implementa los comandos \"vidente\"...."];
+  Node1 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node15 [label="{Battleship.SpecialHabilities\lHandler\n|# Printer\l|+ SpecialHabilitiesHandler()\l# InternalHandle()\l# CanHandle()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBattleship_1_1SpecialHabilitiesHandler.html",tooltip="Un \"handler\" del patrón Chain of Responsibility que implementa los comandos \"ataque aereo\",..."];
+}

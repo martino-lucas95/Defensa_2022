@@ -1,0 +1,15 @@
+digraph "Battleship.BaseHandler.Handle"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Battleship.BaseHandler.Handle",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Procesa el mensaje o la pasa al siguiente \"handler\" si existe."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Battleship.BaseHandler.Can\lHandle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBattleship_1_1BaseHandler.html#a442e0f3700d558da0f3ef9cbd8062692",tooltip="Determina si este \"handler\" puede procesar el mensaje. En la clase base se utiliza el array BaseHandl..."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Battleship.IHandler.Handle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interfaceBattleship_1_1IHandler.html#a912d50abf330362b1cd51d0cb80bc733",tooltip="Procesa el mensaje o la pasa al siguiente \"handler\" si existe."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Battleship.BaseHandler.Internal\lHandle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBattleship_1_1BaseHandler.html#a4859dbe0b59991c99a7c62123cb1ca1b",tooltip="Este método debe ser sobreescrito por las clases sucesores. La clase sucesora procesa el mensaje y re..."];
+}

@@ -1,0 +1,8 @@
+digraph "Battleship.Ship"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Battleship.Ship\n|+ Size\l+ Health\l+ Coordinates\l+ Character\l|+ Ship()\l+ GetCharacter()\l+ GetCoordinates()\l+ GetHealth()\l+ GetSize()\l+ AddCoordinate()\l+ DecreaseHealth()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Ship representa a los barcos en los tableros"];
+}

@@ -1,0 +1,8 @@
+digraph "Battleship.Player"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Battleship.Player\n||+ GetShipsBoard()\l+ GetRegisterBoard()\l+ GetSpecialHabilities()\l+ GetBoardsToPrint()\l+ GetShipsAlive()\l+ GetTurn()\l+ ChangeTurn()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Player se utiliza como una extensión de User, contiene métodos y atributos particulares para jugar al..."];
+}
