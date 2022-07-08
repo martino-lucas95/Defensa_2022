@@ -51,8 +51,6 @@ namespace Battleship
                 return response;
             }
         }
-
-
         /// <summary>
         /// La misma función que el método Attack, pero con la diferencia que cuando se ataca,
         /// si el disparo dió al lado de un barco, el mensaje a retornar es "agua casi tocado" en lugar

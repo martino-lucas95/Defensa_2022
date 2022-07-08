@@ -56,7 +56,7 @@ namespace Library.Tests
             result = handler.Handle(message, out response);
 
             Assert.That(result, Is.Not.Null);
-            Assert.That(response, Is.EqualTo($"\nComandos en estado '{user1.getStatus()}:'\n\n- atacar <coordenada> (ejemplo: 'atacar A1'){forInGame}"));
+            Assert.That(response, Is.EqualTo($"\nComandos en estado '{user1.getStatus()}:'\n\n- atacar <coordenada> (ejemplo: 'atacar A1'){forInGame}'\n\n- Disparos al agua'\n\n- Disparos acertados'"));
         }
     }
 }

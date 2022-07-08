@@ -18,6 +18,8 @@ namespace Battleship
 
         private User UserWinner;    // Usuario ganador
 
+        private WaterShipShoots waterShipCounter = new WaterShipShoots();
+
         public Game(User user1, User user2)
         {
             this.Id = CounterId();  // Se le asigna un id con el método CounterId
@@ -32,6 +34,10 @@ namespace Battleship
             return this.Id;
         }
 
+        public WaterShipShoots GetGameCounter()
+        {
+            return this.waterShipCounter;
+        }
         /// <summary>
         /// Método para tener una permanencia de la id de los juegos
         /// </summary>

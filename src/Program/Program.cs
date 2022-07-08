@@ -116,7 +116,11 @@ namespace Battleship
                 new AttackPredictiveHandler(
                 new SpecialHabilitiesHandler(
                 new SeerHandler(
+                new WaterShoots(
+                new ShipShoots(
                 new FinalHandle(null)
+                , TelegramPrint)
+                , TelegramPrint)
                 , TelegramPrint)
                 , TelegramPrint)
                 , TelegramPrint)

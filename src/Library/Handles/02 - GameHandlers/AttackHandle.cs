@@ -17,6 +17,9 @@ namespace Battleship
 
         protected IPrinter Printer;
 
+        // public int WaterShoot = 0;
+        // private int ShipShoot = 0;
+
         /// <summary>
         /// Inicializa una nueva instancia de la clase <see cref="AttackHandle"/>. Esta clase procesa el mensaje "atacar".
         /// </summary>
@@ -105,8 +108,17 @@ namespace Battleship
                     }
 
                     // Cambio de turno (Agua casi tocado es para el modo de juego predictivo)
-                    if(response == "Agua" || response == "Hundido" || response == "Tocado" || response == "Agua casi tocado")
+                    if(response == "Hundido" || response == "Tocado")
                     {
+                        game.GetGameCounter().AddShipShoots();
+                        Printer.Print($"El contricante ha atacado, {response}", userAttacked.GetID());
+                        response += "\n\n\n\n------Turno cambiado------\n\n"; 
+                        user.GetPlayer().ChangeTurn();
+                        userAttacked.GetPlayer().ChangeTurn();
+                    }
+                    else if (response == "Agua" || response ==  "Agua casi tocado")
+                    {
+                        game.GetGameCounter().AddWaterShoots();
                         Printer.Print($"El contricante ha atacado, {response}", userAttacked.GetID());
                         response += "\n\n\n\n------Turno cambiado------\n\n"; 
                         user.GetPlayer().ChangeTurn();
@@ -123,6 +135,7 @@ namespace Battleship
             {
                 response = "Sucedió un error, vuelve a intentar";
             }
+            
         }
 
         // Método para que las clases herederas lo sobrescriban, cambiando el método con el cual se ataca
@@ -148,6 +161,7 @@ namespace Battleship
 
             return response;
         }
+       
 
         protected override bool CanHandle(Message message)
         {

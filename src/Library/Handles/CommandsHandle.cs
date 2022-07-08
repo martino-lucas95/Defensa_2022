@@ -54,7 +54,7 @@ namespace Battleship
                 } 
                 else if(user.getStatus() == $"in normal game")
                 {
-                    response = $"\nComandos en estado '{user.getStatus()}:'\n\n- atacar <coordenada> (ejemplo: 'atacar A1'){forInGame}";
+                    response = $"\nComandos en estado '{user.getStatus()}:'\n\n- atacar <coordenada> (ejemplo: 'atacar A1'){forInGame}'\n\n- Disparos al agua'\n\n- Disparos acertados'";
                 }
                 else if(user.getStatus() == $"in predictive game")
                 {
