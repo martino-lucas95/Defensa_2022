@@ -79,7 +79,7 @@ namespace Library.Tests
             }              
 
             message.From = userTelegram2;
-            message.Text = "atacar j1";
+            message.Text = "atacar j6";
             
             attackHandler.Handle(message, out response);
 
